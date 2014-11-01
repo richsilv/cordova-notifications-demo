@@ -1,0 +1,20 @@
+<head>
+  <title>My App</title>
+</head>
+
+<body>
+	{{> loginButtons}}
+	{{#if showForm}}
+		{{> form}}
+	{{/if}}
+</body>
+
+<template name="form">
+
+	<form>
+		<input type="text" data-field="title" placeholder="Title">
+		<input type="text" data-field="message" placeholder="Message">
+		<button data-action="send-notification">Send</button>
+	</form>
+
+</template>
